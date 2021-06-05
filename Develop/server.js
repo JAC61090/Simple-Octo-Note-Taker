@@ -3,9 +3,9 @@ const express = require('express');
 const fs = require('fs');
 var bodyParser = require('body-parser');
 const app = express()
+const dbNotes = require('./db/db.json')
 
-
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 
 
 
