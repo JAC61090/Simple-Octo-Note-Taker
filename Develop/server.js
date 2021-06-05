@@ -1,9 +1,12 @@
-const express = require('express')
+const path = require('path');
+const express = require('express');
 const fs = require('fs');
-var bodyParser = require('body-parser')
-
+var bodyParser = require('body-parser');
 const app = express()
-const port = 3000
+
+
+const PORT = process.env.PORT || 80;
+
 
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
@@ -67,8 +70,7 @@ app.delete("/api/notes/:id" , function(req, res) {
   res.send('/Users/JAY/Desktop/HOMEWORK/HomExpress11/Develop/public/notes.html')
 });
 
+app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
 
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+
