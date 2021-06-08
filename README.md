@@ -2,6 +2,14 @@
 
 ## Simple-Octo-Note-Taker
 
+## Author & Links
+
+- git JAC61090
+- https://github.com/JAC61090/Simple-Octo-Note-Taker.git
+- https://takenotesson.herokuapp.com 
+
+
+
 Here is a simple note taker application for quick and easy usage. 
 
 ## Table of Contents
@@ -71,11 +79,5 @@ Example of Delete:
 * app.delete("/api/notes/:id" , function(req, res) {
   // WITHIN OUR /api/notes/ ROUTE, THIS FUNCTION LOOKS FOR EACH NOTE'S SPECIFIC ID
   var delNoteId = req.params.id;
-
-## Author & Links
-
-- github JAC61090
-- https://github.com/JAC61090/Simple-Octo-Note-Taker.git
-- 
 
 
